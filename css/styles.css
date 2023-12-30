@@ -79,6 +79,8 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+    height: 396px;
+    background-size: 500px;
 }
 
 .hero-subheading {
@@ -86,7 +88,7 @@ footer {
   font-weight: 100;
 }
 .hero-input {
-  width: 80%;
+  width: 101%;
   height: 50px;
   padding: 16px;
   border-radius: 8px;

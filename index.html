@@ -9,6 +9,12 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Create a <link> to the first stylesheet needed for Bootstrap -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
 </head>
 
@@ -18,19 +24,67 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-   <nav></nav> 
+  <nav class="navbar navbar-light bg-light navbar-expand-sm mb-2">
+    <div class="navbar-brand text-dark">QTrip</div>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pages/adventures/index.html">Explore</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
 
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex"></div> 
+   <div class="hero-image d-flex justify-content-center text-white" >
+     <div>
+      <p style="text-align: center;"> <span style="font-weight:bold;font-size: xx-large;">Welcome To QTrip</span>
+      <br>
+      Explore the world with fantastic places to venture around
+      </p>
+      <p style="text-align: left;">
+        <input placeholder="Search a City" class="hero-input" />
+      </p>
+    </div>
+      
+      <!-- <div>Explore the world with fantastic places to venture around</div> -->
+   </div>
+   
 
-
-  <div class="container">
+  <div class="container mt-3">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
+    <div class="row">
+       <div class="col-md-3">Bengaluru</div>
+       <div class="col-md-3">Kolkata</div>
+       <div class="col-md-3">Goa</div>
+       <div class="col-md-3">Mumbai</div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-3">Singapore</div>
+      <div class="col-md-3">Dubai</div>
+      <div class="col-md-3">Malaysia</div>
+      <div class="col-md-3">Paris</div>
+   </div>
   </div>
 
   <footer>
@@ -39,6 +93,11 @@
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- Add scripts needed for bootstrap to work -->
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   
 </body>
 
