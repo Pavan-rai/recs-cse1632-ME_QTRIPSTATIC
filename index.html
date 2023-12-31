@@ -24,22 +24,25 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-  <nav class="navbar navbar-light bg-light navbar-expand-sm mb-2">
-    <div class="navbar-brand text-dark">QTrip</div>
+  <nav class="navbar navbar-light bg-light navbar-expand-sm p-3">
+    <div class="navbar-brand" href="/">QTrip</div>
 
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
-      data-bs-target="#collapsibleNavbar"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav d-flex justify-content-end w-100">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pages/adventures/index.html">Explore</a>
@@ -55,16 +58,14 @@
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex justify-content-center text-white" >
-     <div>
-      <p style="text-align: center;"> <span style="font-weight:bold;font-size: xx-large;">Welcome To QTrip</span>
-      <br>
-      Explore the world with fantastic places to venture around
+   <div class="hero-image d-flex justify-content-center align-items-center text-white text-center" >
+     <div class="container">
+      <h1>Welcome to QTrip</h1>
+      <p class="hero-subheading">
+        Explore the world with fantastic places to venture around
       </p>
-      <p style="text-align: left;">
-        <input placeholder="Search a City" class="hero-input" />
-      </p>
-    </div>
+      <input class="hero-input" placeholder="Search a City" />
+     </div>
       
       <!-- <div>Explore the world with fantastic places to venture around</div> -->
    </div>
@@ -73,18 +74,35 @@
   <div class="container mt-3">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
-    <div class="row">
-       <div class="col-md-3">Bengaluru</div>
-       <div class="col-md-3">Kolkata</div>
-       <div class="col-md-3">Goa</div>
-       <div class="col-md-3">Mumbai</div>
+<div class="row">
+  <div class="col-sm-6 col-lg-3 mb-4">
+       <a href="pages/adventures/">Bengaluru</a>
+ </div>
+  <div class="col-sm-6 col-lg-3 mb-4">
+       <a href="#">Kolkata</a>
+ </div>
+ <div class="col-sm-6 col-lg-3 mb-4">
+  <a href="#">Goa</a>
+</div>
+<div class="col-sm-6 col-lg-3 mb-4">
+  <a href="#">Mumbai</a>
+</div>
+ <!-- More col structures -->
+</div>
+   <div class="row">
+     <div class="col-sm-6 col-lg-3 mb-4">
+      <a href="#">Singapore</a>
     </div>
-    <div class="row mt-3">
-      <div class="col-md-3">Singapore</div>
-      <div class="col-md-3">Dubai</div>
-      <div class="col-md-3">Malaysia</div>
-      <div class="col-md-3">Paris</div>
-   </div>
+     <div class="col-sm-6 col-lg-3 mb-4">
+      <a href="#">Dubai</a>
+     </div>
+     <div class="col-sm-6 col-lg-3 mb-4">
+      <a href="#">Malaysia</a>
+     </div>
+     <div class="col-sm-6 col-lg-3 mb-4">
+      <a href="#">Paris</a>
+    </div>
+  </div>
   </div>
 
   <footer>
